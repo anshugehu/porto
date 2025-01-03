@@ -1,0 +1,137 @@
+/* --- HTML File: index.html --- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu Panwar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="resume.pdf" target="_blank">
+
+            <img src="logo.jpeg" alt="Logo" class="logo-img">
+            <p style="color: aliceblue;display: block;text-align: center;">Click Here</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="horizontal-scroll">
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <div class="content">
+                <h1>Anshu Panwar</h1>
+                <p>Mobile Developer | Web Developer | Fresher</p>
+                <button id="play-sound">🔊 Play Music</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I’m Anshu Panwar, a passionate Mobile Developer and budding Web Developer. As a fresher, I am eager to bring innovative ideas and a strong work ethic to the tech industry.
+                </p>
+                <p>
+                    Mobile Development: I have successfully completed 4 projects in Android development and 1 project in React Native.
+                    Web Development: I have hands-on experience creating responsive websites like <a href="https://www.tanishkatourandtravels.com/">Tanishka Tour and Travels</a>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="content">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card" onclick="openVideo(this)">
+                        <video class="project-video" controls>
+                            <source src="shop.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Shop</h3>
+                        
+                    </div>
+                    <div class="project-card" onclick="openVideo(this)">
+                        <video class="project-video" controls>
+                            <source src="social.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Social</h3>
+                        
+                    </div>
+                    <div class="project-card" onclick="openVideo(this)">
+                        <video class="project-video" controls>
+                            <source src="travel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Travel</h3>
+                    </div>
+                    <div class="project-card" onclick="openVideo(this)">
+                        <video class="project-video" controls>
+                            <source src="tender.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Tender</h3>
+                    </div>
+                    <div class="project-card" onclick="openVideo(this)">
+                        <video class="project-video" controls>
+                            <source src="weather .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <h3>Weather</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="content">
+        <h2>Contact Me</h2>
+        
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/anshu_panwar_07/profilecard/?igsh=Mm52dnNyODRuM2h3" target="_blank">
+                <img src="insta.jpg" alt="Instagram" class="social-img">
+            </a>
+            <a href="https://x.com/anshu_panwar_09?s=11" target="_blank">
+                <img src="twitter.jpg" alt="Twitter" class="social-img">
+            </a>
+        </div>
+        <div>
+            <p class="email">Email:- panwaranshu538@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>© 2024 Anshu Panwar | Designed for Portfolio</p>
+    </footer> 
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-modal" onclick="closeVideo()">&times;</span>
+            <video id="modalVideo" controls></video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
